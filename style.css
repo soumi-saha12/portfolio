@@ -1317,6 +1317,10 @@ img  { max-width: 100%; height: auto; }
 
   nav {
     padding: 16px 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
   }
   .nav-links {
     display: none;
