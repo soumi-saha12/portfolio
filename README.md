@@ -1,6 +1,7 @@
 # 🌸 Soumi Saha — Personal Portfolio
 
 <div align="center">
+
 ![Portfolio Banner](https://img.shields.io/badge/Portfolio-Live-FF4FA3?style=for-the-badge&logo=netlify&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -22,17 +23,11 @@ A modern, fully responsive personal portfolio website for **Soumi Saha** — B.T
 ## 🎨 Design Highlights
 
 - 🖤 **Pure black** background with **hot pink** (`#FF4FA3`) as the only accent color
-
 - 💫 Animated **spinning arc border** around profile photo
-
 - ✍️ **Typewriter effect** cycling through roles in the hero section
-
 - 🔮 **Glassmorphism** navbar with blur effect
-
 - 📱 Fully **mobile responsive** with hamburger menu
-
 - 🎞️ **Scroll reveal animations** on all sections
-
 - 🖋️ Custom fonts — **Syne** (headings) + **DM Sans** (body)
 
 ---
@@ -55,48 +50,26 @@ Portfolio/
 
 ## 🚀 Sections
 
-Section
-Description
-
-🏠 **Hero**
-Animated profile photo, typing effect, CTA buttons
-
-👤 **About**
-Introduction and background
-
-🎓 **Education**
-Timeline — IEM Kolkata & TIGPS Siliguri
-
-🛠️ **Skills**
-Languages, Web, Data Science & Tools
-
-💼 **Experience**
-Web Dev Intern at RINEX
-
-📁 **Projects**
-Todify — Task Manager App
-
-🏆 **Achievements**
-Hackathons & Certifications
-
-📄 **Resume**
-Download CV button
-
-📬 **Contact**
-Email, Phone, LinkedIn, GitHub
+| Section | Description |
+|---|---|
+| 🏠 **Hero** | Animated profile photo, typing effect, CTA buttons |
+| 👤 **About** | Introduction and background |
+| 🎓 **Education** | Timeline — IEM Kolkata & TIGPS Siliguri |
+| 🛠️ **Skills** | Languages, Web, Data Science & Tools |
+| 💼 **Experience** | Web Dev Intern at RINEX |
+| 📁 **Projects** | Todify — Task Manager App |
+| 🏆 **Achievements** | Hackathons & Certifications |
+| 📄 **Resume** | Download CV button |
+| 📬 **Contact** | Email, Phone, LinkedIn, GitHub |
 
 ---
 
 ## 🏆 Achievements Highlighted
 
 - 🥇 **IEEE Double Slash 4.0** — Top 11 out of 350 teams
-
 - 🥉 **HackSnippet 4.0** — 2nd Runner-Up at IEM/UEM Kolkata
-
 - 🇮🇳 **Smart India Hackathon 2025** — Top 50 teams from college
-
 - 📜 **NPTEL** — Elite certification in Soft Skills
-
 - 🔐 **IBM SkillsBuild** — Cyber Security, ML & AI Ethics
 
 ---
@@ -115,14 +88,9 @@ Version     →  Git & GitHub
 
 ## ⚙️ Run Locally
 
-```
-# Clone the repository
+```bash
 git clone https://github.com/soumi-saha12/portfolio.git
-
-# Navigate into the folder
 cd portfolio
-
-# Open in browser
 open index.html
 ```
 
@@ -133,15 +101,17 @@ Or use the **Live Server** extension in VS Code for hot reload. 🔥
 ## 📬 Connect With Me
 
 <div align="center">
-[](https://www.linkedin.com/in/soumi-saha-523bba318)
-[](https://github.com/soumi-saha12)
-[](mailto:soumisms12@gmail.com)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/soumi-saha-523bba318)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/soumi-saha12)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:soumisms12@gmail.com)
 
 </div>
 
 ---
 
 <div align="center">
+
 Made with 🩷 by **Soumi Saha**
 
 ⭐ Star this repo if you like it!
