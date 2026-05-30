@@ -1104,7 +1104,8 @@ section {
    FOOTER STYLING
    ========================================================================== */
 footer {
-    background: var(--bg);
+    position: relative;
+    background: #000000;
     border-top: 1px solid #1A1A1A;
     display: flex;
     flex-direction: row;
@@ -1117,20 +1118,27 @@ footer {
 
 .footer-socials {
     display: flex;
+    flex-direction: row;
     gap: 16px;
+    align-items: center;
 }
 
-.footer-soc-link {
-    color: var(--white);
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-socials a {
+    color: #ffffff;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.footer-soc-link:hover {
-    color: var(--pink);
+.footer-socials a:hover {
+    color: #FF4FA3;
+}
+
+/* backward-compatible selector: existing HTML uses .copyright */
+.footer-copyright,
+.copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* ==========================================================================
@@ -1366,6 +1374,21 @@ img  { max-width: 100%; height: auto; }
   .menu-toggle {
     display: flex;
   }
+
+    /* Mobile footer layout: stack and center elements */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 12px;
+        padding: 24px;
+    }
+
+    .footer-copyright,
+    .copyright {
+        position: static;
+        transform: none;
+    }
 
   .hero {
     grid-template-columns: 1fr;
