@@ -1061,8 +1061,9 @@ section {
     letter-spacing: 0.05em;
 }
 
-.contact-row-val {
-    font-size: 0.95rem;
+.contact-row-val,
+.contact-value {
+    font-size: 13px;
     font-weight: 600;
     color: var(--white);
     word-break: break-all;
@@ -1382,6 +1383,17 @@ img  { max-width: 100%; height: auto; }
         align-items: center;
         gap: 12px;
         padding: 24px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .footer-copyright,
