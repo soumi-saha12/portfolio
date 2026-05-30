@@ -171,6 +171,7 @@ section:nth-of-type(even) {
     border: none;
     cursor: pointer;
     z-index: 1002;
+    margin-left: auto;
 }
 
 .menu-toggle .bar {
@@ -1343,6 +1344,12 @@ img  { max-width: 100%; height: auto; }
     cursor: pointer;
     background: none;
     border: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
   }
 
   .hero {
