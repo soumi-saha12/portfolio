@@ -61,7 +61,7 @@ Portfolio/
 | 📁 **Projects** | Hospital Readmission Risk Intelligence & Cloud Anomaly Detection |
 | 🏆 **Achievements** | Hackathons (IEEE DoubleSlash, HackSnippet) & Certifications (NPTEL, IBM) |
 | 📄 **Resume** | Download & view resume options |
-| 📬 **Contact** | Email, Phone (+91 98327 35868), LinkedIn, GitHub |
+| 📬 **Contact** | Email, LinkedIn, GitHub |
 
 ---
 

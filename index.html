@@ -504,20 +504,8 @@
                             
                             <div class="contact-rows-grid">
                                 
-                                <!-- Phone Row -->
-                                <div class="contact-row click-to-copy" data-copy="+919832735868" id="contact-row-phone">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div class="contact-details-box">
-                                        <span class="contact-row-label">Phone</span>
-                                        <span class="contact-row-val">+91 98327 35868</span>
-                                    </div>
-                                    <span class="row-copy-tooltip">Click to copy</span>
-                                </div>
-
                                 <!-- Email Row -->
-                                <div class="contact-row click-to-copy" data-copy="soumisms12@gmail.com" id="contact-row-email">
+                                <a href="mailto:soumisms12@gmail.com" class="contact-row link-row email-link-row" id="contact-row-email" title="Click to send an email">
                                     <div class="contact-icon">
                                         <i class="fas fa-envelope"></i>
                                     </div>
@@ -525,8 +513,14 @@
                                         <span class="contact-row-label">Email</span>
                                         <span class="contact-row-val">soumisms12@gmail.com</span>
                                     </div>
-                                    <span class="row-copy-tooltip">Click to copy</span>
-                                </div>
+                                    <div class="contact-row-actions">
+                                        <button type="button" class="action-copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address" data-copy="soumisms12@gmail.com">
+                                            <i class="fas fa-copy"></i>
+                                            <span class="action-tooltip">Copy</span>
+                                        </button>
+                                        <span class="row-link-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                    </div>
+                                </a>
 
                                 <!-- LinkedIn Row -->
                                 <a href="https://www.linkedin.com/in/soumi-saha-523bba318" target="_blank" rel="noopener noreferrer" class="contact-row link-row" id="contact-row-linkedin">

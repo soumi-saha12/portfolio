@@ -138,8 +138,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ==========================================================================
-       5. DIRECT CLICK TO COPY DETAILS WITH VISUAL TOOLTIP FEEDBACK
+       5. COPY BUTTON AND DIRECT EMAIL INTERACTION
        ========================================================================== */
+    const copyBtns = document.querySelectorAll('.action-copy-btn');
+    copyBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const textToCopy = btn.getAttribute('data-copy');
+            const tooltip = btn.querySelector('.action-tooltip');
+            
+            if (textToCopy) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    if (tooltip) {
+                        const originalText = tooltip.textContent;
+                        tooltip.textContent = "Copied!";
+                        tooltip.style.color = "#2ecc71";
+                        tooltip.style.borderColor = "rgba(46, 204, 113, 0.4)";
+                        tooltip.style.opacity = "1";
+                        
+                        setTimeout(() => {
+                            tooltip.textContent = originalText;
+                            tooltip.style.color = "var(--pink)";
+                            tooltip.style.borderColor = "rgba(255, 79, 163, 0.25)";
+                            tooltip.style.opacity = "";
+                        }, 2000);
+                    }
+                }).catch(err => {
+                    console.error("Could not copy detail text: ", err);
+                });
+            }
+        });
+    });
+
+    const emailLinkRow = document.querySelector('.email-link-row');
+    if (emailLinkRow) {
+        emailLinkRow.addEventListener('click', () => {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText('soumisms12@gmail.com').catch(() => {});
+            }
+        });
+    }
+
     const copyCards = document.querySelectorAll('.click-to-copy');
     copyCards.forEach(card => {
         card.addEventListener('click', () => {
