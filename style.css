@@ -736,10 +736,17 @@ section {
 /* ==========================================================================
    SECTION: EXPERIENCE & PROJECTS
    ========================================================================== */
-.experience-wrapper,
-.projects-grid-container {
+.experience-wrapper {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.projects-grid-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2.2rem;
 }
 
 .experience-card {
@@ -794,10 +801,35 @@ section {
     line-height: 1.65;
 }
 
+.exp-bullet-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+}
+
+.exp-bullet-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.exp-bullet-list li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--pink);
+    font-weight: 700;
+}
+
 /* Project Cards */
 .project-card {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .project-img-wrapper {
@@ -837,6 +869,14 @@ section {
     background: radial-gradient(circle, #0F171A 0%, #050809 100%);
 }
 
+.healthcare-visual {
+    background: radial-gradient(circle at center, #1b0e1d 0%, #09080e 100%);
+}
+
+.cloud-visual {
+    background: radial-gradient(circle at center, #111424 0%, #080a12 100%);
+}
+
 .web-code-scroll {
     width: 80%;
     height: 70%;
@@ -856,6 +896,48 @@ section {
     white-space: pre;
     position: absolute;
     animation: typeScroll 8s infinite linear;
+}
+
+.ml-code-scroll {
+    width: 85%;
+    height: 75%;
+    border: 1px solid rgba(255, 79, 163, 0.15);
+    background: rgba(12, 10, 18, 0.85);
+    border-radius: 8px;
+    position: relative;
+    padding: 0.8rem;
+    font-family: monospace;
+    font-size: 0.55rem;
+    color: var(--pink-soft);
+    overflow: hidden;
+}
+
+.ml-code-scroll::after {
+    content: "# Risk Prediction Ensemble\nensemble = WeightedEnsemble([\n  (LightGBM, 0.40),\n  (XGBoost, 0.35),\n  (CatBoost, 0.25)\n])\nexplainer = shap.TreeExplainer(ensemble)\nshap_values = explainer(patient_features)\nrisk_score = ensemble.predict_proba(X)";
+    white-space: pre;
+    position: absolute;
+    animation: typeScroll 9s infinite linear;
+}
+
+.cloud-code-scroll {
+    width: 85%;
+    height: 75%;
+    border: 1px solid rgba(255, 79, 163, 0.15);
+    background: rgba(8, 11, 20, 0.85);
+    border-radius: 8px;
+    position: relative;
+    padding: 0.8rem;
+    font-family: monospace;
+    font-size: 0.55rem;
+    color: var(--pink-soft);
+    overflow: hidden;
+}
+
+.cloud-code-scroll::after {
+    content: "# Cloud Anomaly Detection\npreprocessor = RobustScaler()\nfeatures = extract_telemetry(metrics)\nanomaly_detector = IsolationForest(0.02)\nanomalies = anomaly_detector.fit(features)\nplot_anomaly_spikes(metrics, anomalies)\nprint(f'System Status: {status}')";
+    white-space: pre;
+    position: absolute;
+    animation: typeScroll 9s infinite linear;
 }
 
 @keyframes typeScroll {
@@ -983,6 +1065,31 @@ section {
     margin-bottom: 24px;
 }
 
+.resume-badge-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--pink);
+    background: rgba(255, 79, 163, 0.08);
+    border: 1px solid rgba(255, 79, 163, 0.25);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.resume-actions-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 1.2rem;
+}
+
 /* Exact Resume button style match to primary cta */
 .resume-download-trigger {
     background: var(--pink);
@@ -1002,6 +1109,28 @@ section {
 
 .resume-download-trigger:hover {
     background: var(--pink-soft);
+}
+
+.resume-view-trigger {
+    background: transparent;
+    color: var(--white) !important;
+    padding: 13px 30px;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.resume-view-trigger:hover {
+    border-color: var(--pink);
+    color: var(--pink) !important;
+    background: rgba(255, 79, 163, 0.05);
 }
 
 /* ==========================================================================

@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const typewriterElement = document.getElementById('typewriter-text');
     const professions = [
-        "AI Enthusiast",
-        "ML Developer",
-        "Hackathon Winner"
+        "AI & ML Developer",
+        "AI Domain Intern",
+        "Hackathon Winner",
+        "Problem Solver"
     ];
     let wordIndex = 0;
     let charIndex = 0;

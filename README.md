@@ -16,7 +16,7 @@
 
 ## 👩‍💻 About
 
-A modern, fully responsive personal portfolio website for **Soumi Saha** — B.Tech CSE (AI & ML) student at Institute of Engineering and Management, Kolkata. Built with pure HTML, CSS, and JavaScript featuring a premium black-and-pink design aesthetic.
+A modern, fully responsive personal portfolio website for **Soumi Saha** — Third-Year B.Tech CSE (AI & ML) student at Institute of Engineering and Management (IEM), Kolkata, and AI Domain Intern at Infosys Springboard. Built with pure HTML, CSS, and JavaScript featuring a premium black-and-pink design aesthetic.
 
 ---
 
@@ -43,7 +43,8 @@ Portfolio/
 │
 └── assets/
     ├── profile.jpg         # Profile photo
-    └── Soumi_Saha_Resume.pdf  # Downloadable resume
+    ├── Soumi_Saha_Resume.pdf  # Downloadable ATS resume
+    └── resume_template.html   # LaTeX-styled HTML resume source
 ```
 
 ---
@@ -53,24 +54,23 @@ Portfolio/
 | Section | Description |
 |---|---|
 | 🏠 **Hero** | Animated profile photo, typing effect, CTA buttons |
-| 👤 **About** | Introduction and background |
-| 🎓 **Education** | Timeline — IEM Kolkata & TIGPS Siliguri |
-| 🛠️ **Skills** | Languages, Web, Data Science & Tools |
-| 💼 **Experience** | Web Dev Intern at RINEX |
-| 📁 **Projects** | Todify — Task Manager App |
-| 🏆 **Achievements** | Hackathons & Certifications |
-| 📄 **Resume** | Download CV button |
-| 📬 **Contact** | Email, Phone, LinkedIn, GitHub |
+| 👤 **About** | Introduction and background in AI & ML |
+| 🎓 **Education** | Timeline — IEM Kolkata (CGPA: 8.63/10) & TIGPS Siliguri |
+| 🛠️ **Skills** | Core Languages, Web Tech, ML/AI, Data Science & Tools |
+| 💼 **Experience** | AI Domain Intern at Infosys Springboard |
+| 📁 **Projects** | Hospital Readmission Risk Intelligence & Cloud Anomaly Detection |
+| 🏆 **Achievements** | Hackathons (IEEE DoubleSlash, HackSnippet) & Certifications (NPTEL, IBM) |
+| 📄 **Resume** | Download & view resume options |
+| 📬 **Contact** | Email, Phone (+91 98327 35868), LinkedIn, GitHub |
 
 ---
 
 ## 🏆 Achievements Highlighted
 
-- 🥇 **IEEE Double Slash 4.0** — Top 11 out of 350 teams
-- 🥉 **HackSnippet 4.0** — 2nd Runner-Up at IEM/UEM Kolkata
-- 🇮🇳 **Smart India Hackathon 2025** — Top 50 teams from college
-- 📜 **NPTEL** — Elite certification in Soft Skills
-- 🔐 **IBM SkillsBuild** — Cyber Security, ML & AI Ethics
+- 🥇 **IEEE DoubleSlash 4.0** — Top 11 out of 350 teams at IEEE Jadavpur University hackathon
+- 🥉 **HackSnippet 4.0** — 2nd Runner-Up at IEM Kolkata
+- 📜 **NPTEL** — Elite + Silver in Principles of Management & AI in HRM; Elite in Soft Skills
+- 🔐 **IBM SkillsBuild** — Machine Learning and AI Ethics Credentials
 
 ---
 
