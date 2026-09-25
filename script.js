@@ -171,14 +171,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const emailLinkRow = document.querySelector('.email-link-row');
-    if (emailLinkRow) {
-        emailLinkRow.addEventListener('click', () => {
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(link => {
+        link.addEventListener('click', () => {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText('soumisms12@gmail.com').catch(() => {});
             }
         });
-    }
+    });
 
     const copyCards = document.querySelectorAll('.click-to-copy');
     copyCards.forEach(card => {
